@@ -40,7 +40,7 @@
                <a href="https://youtube.com/@andikarh_.?si=p57-cmOMKSjHOF1Z"><i class="fa-brands fa-youtube"></i></a>
                <a href="www.linkedin.com/in/andikarh"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
-            <a href="https://drive.google.com/file/d/1GEsxZFkIWdCPGtSQ3kWU2Nl_m-6BQZMD/view?usp=drive_link" class="btn">Donwload CV</a>
+            <a href="https://drive.google.com/file/d/1xM9bX4ST2Xu9iY0qH_0QjM9Nmy1PpSGt/view?usp=sharing" class="btn">Donwload Portfolio</a>
         </div>
 
         <div class="home-img">
@@ -56,9 +56,9 @@
 
         <div class="about-content">
             <h2 class="heading">ABOUT <span>Me</span></h2>
-            <h3>UI/UX Designer</h3>
-            <p> I am a Fresh graduate of Information Technology who has an interest in UI/UX Designer, Web Designer and GIS. Have experience of Certified Independent Study (SIB) at MyEduSolve in the field of UI/UX Designer and organizational experience at Balwana as Chairperson and Head of Education and Training Division. The skills I have include leadership, time and team management, and socializing and can operate Microsoft Office, Figma, Canva, Html, Css, Javascript and GIS</p>
-            <a href="#" class="btn">Read more</a>
+            <h3>Information Technology</h3>
+            <p> I am a Freshgraduate majoring in Information Technology who has an interest in IT. Have MSIB experience as UI/UX Designer, WebGIS System Design and Organization as General Chairperson. The skills I have are able to design mobile and website applications, design or application development. Proficient in using Microsoft Office, Figma, Canva, Html, Css, Javascript, PHP and GIS.</p>
+            <a href="https://drive.google.com/file/d/1GEsxZFkIWdCPGtSQ3kWU2Nl_m-6BQZMD/view?usp=sharing" class="btn">Donwload CV</a>
         </div>
     </section>
 
@@ -96,11 +96,20 @@
 
         <div class="portfolio-container">
             <div class="portfolio-box">
-                <img src="educredit.png" alt="">
+                <img src="KitaAmbil.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>EduCredit.id</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <a href="https://www.behance.net/gallery/201562193/UIUX-Design-App-EduCreditid"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h4>KitaAmbil</h4>
+                    <p>KitaAmbil is a digital waste management application that can help handle waste accumulation.</p>
+                    <a href="https://drive.google.com/file/d/1f8Q0SPeie9-ijPpD32vJgtYlQ8uYwRO4/view?usp=sharing"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="sig.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>WebGIS</h4>
+                    <p>WebGIS is a geographic information system for the location of trees in the Jember University campus area in 2024.</p>
+                    <a href="https://drive.google.com/file/d/1a1Dvi7gKIBk3aXQMphElWQi5wIrFslIS/view?usp=sharing"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
 
@@ -108,17 +117,17 @@
                 <img src="sikoma.png" alt="">
                 <div class="portfolio-layer">
                     <h4>Sikoma</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <a href="https://www.behance.net/gallery/201578813/UI-Design-App-Sikoma"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <p>Sikoma is an application that provides information on hangout places such as cafes, restaurants and others.</p>
+                    <a href="https://drive.google.com/file/d/1PS3IYBqFdrhpv8w6-VJIPMMdfKBdom_j/view?usp=sharing"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box">
-                <img src="sig.png" alt="">
+                <img src="educredit.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>SIG</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
+                    <h4>EduCredit.id</h4>
+                    <p>Educredit.Id is an application that provides loans for school fees, courses, tutoring and others.</p>
+                    <a href="https://drive.google.com/file/d/1VH0UdBfhnGlA7QFhTHOSdxm335bXkrh3/view?usp=sharing"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -128,18 +137,19 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="#">
+        <form id="email-form">
+            <input type="hidden" name="time" value="Mar 27 2025 08:46">
             <div class="input-box">
-                <input type="text" placeholder="Full Name" id="name">
-                <input type="text" placeholder="Email Address" id="email">
+                <input for="name" type="text" placeholder="Full Name" id="name" name="name">
+                <input for="email" type="email" placeholder="Email Address" id="email" name="email">
             </div>
 
             <div class="input-box">
-                <input type="number" placeholder="Phone Number" id="phone">
-                <input type="text" placeholder="Subject" id="subject">
+                <input for="nomor" type="number" placeholder="Phone Number" id="nomor" name="nomor">
+                <input for="title" type="text" placeholder="Subject" id="title" name="title">
             </div>
-            <textarea name="" cols="30" rows="10" placeholder="Your Massage" id="massage"></textarea>
-            <input type="submit" value="Send Massage" class="btn">
+            <textarea for="message" name="message" cols="30" rows="10" placeholder="Your Message" id="message"></textarea>
+            <input type="submit" value="Send Message" class="btn" id="button">
         </form>
     </section>
 
@@ -163,7 +173,13 @@
     <!-- Mainjs Design -->
     <script src="main.js"></script>
 
-    <!-- smtpjs -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- MailJs-->
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- API key MAilJS -->
+    <script>
+        emailjs.init('UA-M-mEdmbViEKiGr');
+    </script>
+
 </body>
 </html>

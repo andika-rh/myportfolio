@@ -60,31 +60,45 @@ const typed = new Typed('.multiple-text',{
 });
 
 /*====== contact js =====*/
-const form = document.querySelector ('form');
-const fullName = document.getElementById("name");
-const email = document.getElementById("email");
-const phone = document.getElementById("phone");
-const subject = document.getElementById("subject");
-const mess = document.getElementById("massage");
+const btn = document.getElementById('button');
 
-function sendEmail() {
-    const bodyMassage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Phone Number: ${phone.value}<br> Massage: ${mess.value}`;
+document.getElementById('email-form').addEventListener
+('submit', function(event) {
+    event.preventDefault();
 
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "dikarahmat336@gmail.com",
-        Password : "p087F014265CD069DCBE31235C396D870E07F",
-        To : 'dikarahmat336@gmail.com',
-        From : "dikarahmat336@gmail.com",
-        Subject : subject.value,
-        Body : bodyMassage
-    }).then(
-      message => alert(message)
-    );
-}
+    btn.value = 'Sending ...';
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
+    const serviceID = 'service_7da3kx6';
+    const templateID = 'template_lcdritb';
 
-    sendEmail();
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            btn.value = 'Send Email';
+            alert('Email Berhasil Terkirim!');
+        }, (err) => {
+            btn.value = 'Send Email';
+            alert(JSON.stringify(err));
+        });
 });
+
+// function sendEmail() {
+//     const bodyMassage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Phone Number: ${phone.value}<br> Massage: ${mess.value}`;
+
+//     Email.send({
+//         Host : "smtp.elasticemail.com",
+//         Username : "dikarahmat336@gmail.com",
+//         Password : "p087F014265CD069DCBE31235C396D870E07F",
+//         To : 'dikarahmat336@gmail.com',
+//         From : "dikarahmat336@gmail.com",
+//         Subject : subject.value,
+//         Body : bodyMassage
+//     }).then(
+//       message => alert(message)
+//     );
+// }
+
+// form.addEventListener("submit", (e) => {
+//     e.preventDefault();
+
+//     sendEmail();
+// });
